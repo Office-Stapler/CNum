@@ -1,4 +1,4 @@
-# ComplexNumberPackage
+# CNum
 A simple complex number implementation.
 ## How it works
 The simple complex number package is split into two parts,
