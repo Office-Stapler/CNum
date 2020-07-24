@@ -1,12 +1,11 @@
-package CNum;
+package cnum;
 
+/**
+ * A simple class that represents rectangular complex number
+ */
 public class CNumRect {
-    /*
-   Simple Complex Number in Polar form with operations done in polar form
-    */
     private double Re;
     private double Im;
-
     public CNumRect() {
         /*
         Initializing with empty argument, makes a new 0 CNum.

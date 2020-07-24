@@ -1,32 +1,30 @@
-package CNum;
+package cnum;
 
 public class CNumOP {
+    /**
+     * A simple method to add two rectangular complex numbers
+     * @param x - A complex number in rectangular form
+     * @param y - A complex number in rectangular form
+     * @return - A new Complex Numer in Rectangular form
+     */
     public static CNumRect add(CNumRect x, CNumRect y) {
-        /*
-        Parems:
-            A CNumRect x.
-            A CNumRect y.
-        Returns:
-            A new CNumRect which adds x to y.
-         */
         double addRe = x.getRe() + y.getRe();
         double addIm = x.getIm() + y.getIm();
         return new CNumRect(addRe, addIm);
     }
 
+    /**
+     *
+     * @param x
+     * @param y
+     * @return
+     */
     public static CNumRect minus(CNumRect x, CNumRect y) {
-        /*
-        Parems:
-            A CNumRect x.
-            A CNumRect y.
-        Returns:
-            A new CNumRect which minuses x by y.
-         */
-        double minusRe = x.getRe() + y.getRe();
-        double minusIm = x.getIm() + y.getIm();
+        double minusRe = x.getRe() - y.getRe();
+        double minusIm = x.getIm() - y.getIm();
         return new CNumRect(minusRe, minusIm);
     }
-
+    
     public static CNumPol divide(CNumPol x, CNumPol y) {
         double mod = x.getModulus() / y.getModulus();
         double arg = x.getArgument() - y.getArgument();

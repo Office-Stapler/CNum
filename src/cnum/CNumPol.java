@@ -1,6 +1,6 @@
-package CNum;
+package cnum;
 
-public class CNumPol{
+public class CNumPol {
     private double modulus;
     private double argument;
     public CNumPol() {
@@ -71,5 +71,9 @@ public class CNumPol{
 
     public double getArgument() {
         return this.argument;
+    }
+
+    public void setArgument(double argument) {
+        this.argument = argument;
     }
 }
